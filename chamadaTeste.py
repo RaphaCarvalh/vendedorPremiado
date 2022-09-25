@@ -1,15 +1,15 @@
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "ACbdcf8fe36eb1ddd6c46badfc73fb72bd"
+account_sid = "xxxxxxxxxxxxxxx"
 # Your Auth Token from twilio.com/console
-auth_token = "bfc8347c4b848b405e8b892d22183638"
+auth_token = "xxxxxxxxxxxxxxxxx"
 
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    to="+5521971786438",
-    from_="+13023052921",
+    to="+5521xxx8",
+    from_="+13xxxxx",
     body="Hello from Python!")
 
 print(message.sid)
